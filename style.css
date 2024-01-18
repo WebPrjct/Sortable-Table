@@ -1,0 +1,52 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+#sortable-table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #3498db;
+  color: white;
+  position: relative;
+}
+
+th button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+}
+
+th button:hover {
+  color: #e74c3c;
+}
+
+th button .fa-sort {
+  font-size: 14px;
+}
+
+tbody tr:hover {
+  background-color: #ecf0f1;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
